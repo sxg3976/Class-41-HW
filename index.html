@@ -1,0 +1,39 @@
+<html>
+        <body><!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #reun{
+                width:175px
+            }
+        </style>
+    </head>
+    <body>
+        <h1>I'll Tell You Your Password</h1>
+        Username: <input type="text" placeholder="Type Username Here" id="un"/>
+        <br>
+        <br>
+        Password: <input type="password" placeholder="Type Password Here" id="pw"/>
+        <br>
+        <br>
+        <br>
+        <br>
+        Enter Username Again: <input type="text" placeholder="Type Username Here, Again" id="reun"/>
+        <br>
+        <br>   
+        <button onclick="person()">Get Password</button>   
+        <p id="p"></p>
+        <script>
+            function person(){
+            var a = document.getElementById("un").value
+            var b = document.getElementById("pw").value
+            var c = document.getElementById("reun").value
+            localStorage.setItem(a,b)
+            var d = localStorage.getItem(c)
+            document.getElementById("p").innerText = d}
+        </script> 
+    </body>
+</html></body>
+        <style></style>
+        <script></script>
+      </html>
